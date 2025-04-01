@@ -380,7 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EA8B7XH696;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = HomeKitLockScreenApp/Info.plist;
 				INFOPLIST_KEY_NSHomeKitUsageDescription = "Cette application a besoin d'accéder à vos accessoires HomeKit pour afficher les données de capteurs sur l'écran de verrouillage.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -412,7 +412,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EA8B7XH696;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = HomeKitLockScreenApp/Info.plist;
 				INFOPLIST_KEY_NSHomeKitUsageDescription = "Cette application a besoin d'accéder à vos accessoires HomeKit pour afficher les données de capteurs sur l'écran de verrouillage.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -443,7 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EA8B7XH696;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = HomeKitLockScreenWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HomeKitLockScreenWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
