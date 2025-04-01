@@ -23,7 +23,7 @@ class HomeKitManager: NSObject, ObservableObject, HMHomeManagerDelegate {
         didSet {
             // Sauvegarde de l’identifiant du capteur sélectionné dans l’App Group
             if let sensor = selectedSensor {
-                UserDefaults(suiteName: "group.com.mon_id.homekit")?
+                UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")?
                     .set(sensor.id.uuidString, forKey: "selectedSensorID")
             }
         }
@@ -40,7 +40,7 @@ class HomeKitManager: NSObject, ObservableObject, HMHomeManagerDelegate {
         self.homeManager?.delegate = self
         
         // Lecture éventuelle du capteur précédemment sélectionné
-        if let sensorIDString = UserDefaults(suiteName: "group.com.mon_id.homekit")?.string(forKey: "selectedSensorID"),
+        if let sensorIDString = UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")?.string(forKey: "selectedSensorID"),
            let sensorUUID = UUID(uuidString: sensorIDString) {
             print("Capteur précédemment sélectionné : \(sensorUUID)")
             // La sélection sera rétablie lors de la mise à jour des capteurs dans homeManagerDidUpdateHomes
@@ -78,7 +78,7 @@ class HomeKitManager: NSObject, ObservableObject, HMHomeManagerDelegate {
             
             // Tente de rétablir la sélection précédente
             if self.selectedSensor == nil,
-               let sensorIDString = UserDefaults(suiteName: "group.com.mon_id.homekit")?.string(forKey: "selectedSensorID"),
+               let sensorIDString = UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")?.string(forKey: "selectedSensorID"),
                let sensorUUID = UUID(uuidString: sensorIDString),
                let sensor = sensors.first(where: { $0.id == sensorUUID }) {
                 self.selectedSensor = sensor
@@ -115,7 +115,7 @@ class HomeKitManager: NSObject, ObservableObject, HMHomeManagerDelegate {
                     } else if let value = tempCharacteristic.value as? Double {
                         DispatchQueue.main.async {
                             self?.temperature = value
-                            UserDefaults(suiteName: "group.com.mon_id.homekit")?
+                            UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")?
                                 .set(value, forKey: "temperature")
                         }
                     }
@@ -130,7 +130,7 @@ class HomeKitManager: NSObject, ObservableObject, HMHomeManagerDelegate {
                     } else if let value = humidityCharacteristic.value as? Double {
                         DispatchQueue.main.async {
                             self?.humidity = value
-                            UserDefaults(suiteName: "group.com.mon_id.homekit")?
+                            UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")?
                                 .set(value, forKey: "humidity")
                         }
                     }
