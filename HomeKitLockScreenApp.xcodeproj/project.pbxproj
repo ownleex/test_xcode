@@ -10,6 +10,10 @@
 		F0748BDC2D9C7D4400DF7C63 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0748BDB2D9C7D4400DF7C63 /* WidgetKit.framework */; };
 		F0748BDE2D9C7D4400DF7C63 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0748BDD2D9C7D4400DF7C63 /* SwiftUI.framework */; };
 		F0748BE92D9C7D4500DF7C63 /* HomeKitLockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0748BD92D9C7D4400DF7C63 /* HomeKitLockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F10000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000011 /* ContentView.swift */; };
+		F10000002 /* HomeKitLockScreenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012 /* HomeKitLockScreenAppApp.swift */; };
+		F10000003 /* HomeKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000013 /* HomeKitManager.swift */; };
+		F10000004 /* HomeKitLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000014 /* HomeKitLockScreenWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +41,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F0748BC72D9C7D1A00DF7C63 /* HomeKitLockScreenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeKitLockScreenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0748BD92D9C7D4400DF7C63 /* HomeKitLockScreenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeKitLockScreenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0748BDB2D9C7D4400DF7C63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		F0748BDD2D9C7D4400DF7C63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F0748BF02D9C7D6D00DF7C63 /* HomeKitLockScreenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitLockScreenWidgetExtension.entitlements; sourceTree = "<group>"; };
+		F10000011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F10000012 /* HomeKitLockScreenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitLockScreenAppApp.swift; sourceTree = "<group>"; };
+		F10000013 /* HomeKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitManager.swift; sourceTree = "<group>"; };
+		F10000014 /* HomeKitLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitLockScreenWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -228,6 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10000001 /* ContentView.swift in Sources */,
+				F10000002 /* HomeKitLockScreenAppApp.swift in Sources */,
+				F10000003 /* HomeKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10000004 /* HomeKitLockScreenWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
