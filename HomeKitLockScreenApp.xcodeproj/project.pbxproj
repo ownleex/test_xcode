@@ -10,10 +10,6 @@
 		F0748BDC2D9C7D4400DF7C63 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0748BDB2D9C7D4400DF7C63 /* WidgetKit.framework */; };
 		F0748BDE2D9C7D4400DF7C63 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0748BDD2D9C7D4400DF7C63 /* SwiftUI.framework */; };
 		F0748BE92D9C7D4500DF7C63 /* HomeKitLockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0748BD92D9C7D4400DF7C63 /* HomeKitLockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F0748BF52D9C7D7200DF7C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0748BF12D9C7D6E00DF7C63 /* ContentView.swift */; };
-		F0748BF62D9C7D7300DF7C63 /* HomeKitLockScreenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0748BF22D9C7D6F00DF7C63 /* HomeKitLockScreenAppApp.swift */; };
-		F0748BF72D9C7D7400DF7C63 /* HomeKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0748BF32D9C7D7000DF7C63 /* HomeKitManager.swift */; };
-		F0748BF82D9C7D7500DF7C63 /* HomeKitLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0748BF42D9C7D7100DF7C63 /* HomeKitLockScreenWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +42,6 @@
 		F0748BDB2D9C7D4400DF7C63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F0748BDD2D9C7D4400DF7C63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F0748BF02D9C7D6D00DF7C63 /* HomeKitLockScreenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitLockScreenWidgetExtension.entitlements; sourceTree = "<group>"; };
-		F0748BF12D9C7D6E00DF7C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F0748BF22D9C7D6F00DF7C63 /* HomeKitLockScreenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitLockScreenAppApp.swift; sourceTree = "<group>"; };
-		F0748BF32D9C7D7000DF7C63 /* HomeKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitManager.swift; sourceTree = "<group>"; };
-		F0748BF42D9C7D7100DF7C63 /* HomeKitLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitLockScreenWidget.swift; sourceTree = "<group>"; };
-		F0748BF92D9C7D7600DF7C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -66,20 +57,11 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F0748BC92D9C7D1A00DF7C63 /* HomeKitLockScreenApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			children = (
-				F0748BF12D9C7D6E00DF7C63 /* ContentView.swift */,
-				F0748BF22D9C7D6F00DF7C63 /* HomeKitLockScreenAppApp.swift */,
-				F0748BF32D9C7D7000DF7C63 /* HomeKitManager.swift */,
-				F0748BF92D9C7D7600DF7C63 /* Info.plist */,
-			);
 			path = HomeKitLockScreenApp;
 			sourceTree = "<group>";
 		};
 		F0748BDF2D9C7D4400DF7C63 /* HomeKitLockScreenWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			children = (
-				F0748BF42D9C7D7100DF7C63 /* HomeKitLockScreenWidget.swift */,
-			);
 			exceptions = (
 				F0748BEA2D9C7D4500DF7C63 /* Exceptions for "HomeKitLockScreenWidget" folder in "HomeKitLockScreenWidgetExtension" target */,
 			);
@@ -246,9 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0748BF52D9C7D7200DF7C63 /* ContentView.swift in Sources */,
-				F0748BF62D9C7D7300DF7C63 /* HomeKitLockScreenAppApp.swift in Sources */,
-				F0748BF72D9C7D7400DF7C63 /* HomeKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0748BF82D9C7D7500DF7C63 /* HomeKitLockScreenWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,3 +427,102 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = perso.HomeKitLockScreenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0748BEC2D9C7D4500DF7C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeKitLockScreenWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EA8B7XH696;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeKitLockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeKitLockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = perso.HomeKitLockScreenApp.HomeKitLockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0748BED2D9C7D4500DF7C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeKitLockScreenWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EA8B7XH696;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeKitLockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeKitLockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = perso.HomeKitLockScreenApp.HomeKitLockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0748BC22D9C7D1A00DF7C63 /* Build configuration list for PBXProject "HomeKitLockScreenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0748BD02D9C7D1C00DF7C63 /* Debug */,
+				F0748BD12D9C7D1C00DF7C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0748BD22D9C7D1C00DF7C63 /* Build configuration list for PBXNativeTarget "HomeKitLockScreenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0748BD32D9C7D1C00DF7C63 /* Debug */,
+				F0748BD42D9C7D1C00DF7C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0748BEB2D9C7D4500DF7C63 /* Build configuration list for PBXNativeTarget "HomeKitLockScreenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0748BEC2D9C7D4500DF7C63 /* Debug */,
+				F0748BED2D9C7D4500DF7C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0748BBF2D9C7D1A00DF7C63 /* Project object */;
+}
