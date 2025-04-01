@@ -20,7 +20,7 @@ struct HomeKitLockScreenWidgetProvider: TimelineProvider {
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<HomeKitLockScreenWidgetEntry>) -> Void) {
-        let userDefaults = UserDefaults(suiteName: "group.com.mon_id.homekit")
+        let userDefaults = UserDefaults(suiteName: "group.perso.HomeKitLockScreenApp")
         let temp = userDefaults?.double(forKey: "temperature") ?? 0.0
         let hum = userDefaults?.double(forKey: "humidity") ?? 0.0
         
